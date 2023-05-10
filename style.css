@@ -1,0 +1,50 @@
+:root {
+  /* COLORS */
+  --dark: #0C134F;
+  --light: #D4ADFC;
+  --purple: #5C469C;
+  --blue: #1D267D;
+}
+
+
+body {
+  margin:0;
+  background-color: var(--dark);
+  font-family: 'Mina', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+h1 {
+  text-align: center;
+  color: var(--light);
+  margin: 1em 0;
+}
+
+h1 span {
+  border: 3px solid var(--light);
+  padding: 0 5px;
+}
+
+.game-field {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--light);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.game-field div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--purple);
+  background-color: var(--blue);
+}
+
+.credits {
+  margin-top: 1em;
+  text-align: center; 
+  color: var(--light);
+}
