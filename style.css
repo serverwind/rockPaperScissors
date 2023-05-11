@@ -71,23 +71,27 @@ h1 span {
 }
 
 #rock {
-  padding: 0.4em;
+  padding: 0.35em;
   cursor: pointer;
 }
 
 #paper {
-  padding: 0.4em;
+  padding: 0.35em;
   cursor: pointer;
 }
 
 #scissors {
-  padding: 0.4em;
+  padding: 0.35em;
   cursor: pointer;
 }
 
 #rock:hover, #paper:hover, #scissors:hover {
   background-color: var(--dark);
   border-bottom: 1px solid var(--purple);
+}
+
+#log {
+  text-align: center;
 }
 
 .credits {
