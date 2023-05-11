@@ -29,18 +29,65 @@ h1 span {
   max-width: 600px;
   margin: 0 auto;
   color: var(--light);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--blue);
 }
 
-.game-field div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  border: 1px solid var(--purple);
-  background-color: var(--blue);
+.battle {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.player-score {
+  background-color: var(--purple);
+  font-size: 2em;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.ai-score {
+  background-color: var(--light);
+  color: var(--purple);
+  font-size: 2em;
+  padding-left: 10px;
+}
+
+.player-choice {
+  font-size: 4em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.ai-choice {
+  font-size: 4em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.abilities {
+  text-align: center;
+  background-color: var(--purple);
+  font-size: 1.4em;
+  padding: 0.3em 0;
+}
+
+#rock {
+  padding: 0.4em;
+  cursor: pointer;
+}
+
+#paper {
+  padding: 0.4em;
+  cursor: pointer;
+}
+
+#scissors {
+  padding: 0.4em;
+  cursor: pointer;
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+  background-color: var(--dark);
+  border-bottom: 1px solid var(--purple);
 }
 
 .credits {
