@@ -37,14 +37,14 @@ h1 span {
   grid-template-columns: 1fr 1fr;
 }
 
-.player-score {
+#player-score {
   background-color: var(--purple);
   font-size: 2em;
   text-align: right;
   padding-right: 10px;
 }
 
-.ai-score {
+#ai-score {
   background-color: var(--light);
   color: var(--purple);
   font-size: 2em;
@@ -91,11 +91,13 @@ h1 span {
 }
 
 #log {
-  text-align: center;
+  display: grid;
+  justify-content: center;
+  margin-top:5px;
 }
 
 .credits {
   margin-top: 1em;
-  text-align: center; 
+  text-align: center;
   color: var(--light);
 }
